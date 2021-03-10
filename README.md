@@ -1,7 +1,7 @@
-# Kubernetes squid ready
+# Kubernetes squid ready with basic authentication
 
-## Docker
+## Quick guide
 
 ```sh
-docker run -p 3128:3128 jmferrer/squid
+docker run -e USERS='user1:password1;user2:password2;user3:password3' -p 3128:3128 jmferrer/squid-basic-auth
 ```
